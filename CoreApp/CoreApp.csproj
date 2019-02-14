@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>aspnet-CoreApp-8207ACCB-2D09-455D-A250-732E7F65DB08</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreApp.Application\CoreApp.Application.csproj" />
+    <ProjectReference Include="..\CoreApp.Data.EF\CoreApp.Data.EF.csproj" />
+    <ProjectReference Include="..\CoreApp.Data\CoreApp.Data.csproj" />
+    <ProjectReference Include="..\CoreApp.Infrastructure\CoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\CoreApp.Utilities\CoreApp.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
